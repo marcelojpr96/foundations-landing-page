@@ -1,0 +1,2 @@
+padding right and left = 16px
+padding up and down = 20px
