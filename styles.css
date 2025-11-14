@@ -171,6 +171,27 @@ div.get-quote-container{
     border:1px solid white;
     color:#F9FAF8;
 }
+.btn-get-quote:active{
+    animation: 2s button-clicked infinite;
+}
+@keyframes button-clicked{
+    0%{
+
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(-1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .get-your-quote-text{
     font-size: 16px;
     color:#F9FAF8;
