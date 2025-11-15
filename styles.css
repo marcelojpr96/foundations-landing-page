@@ -52,6 +52,12 @@ a.header-links{
     padding-left:50px;
     font-size: 18px;
     font-weight: 700;
+    
+    
+}
+.header-image-file{
+
+    animation: 3s linear spinning infinite;
 }
 
 .content{
@@ -65,7 +71,7 @@ h2{
 }
 .landing-div{
     display: flex;
-    align-content: center;
+    align-content: space-around;
     justify-content: center;
     gap:10px;
     background-color: #1F2937;
@@ -79,8 +85,8 @@ h2{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding:20px 16px 20px 50px;
+    align-items:flex-start ;
+    padding:20px 16px 20px 60px;
     border:2px solid green;
 }
 .landing-div-right{
@@ -91,15 +97,9 @@ h2{
     justify-content: center;
     border:2px solid green;
 }
-.one{
-    min-width: 300px;
-    min-height : 100px;
-    border : 1px solid blue;
-}
 
 
-
-
+/*show case*/
 .showcase-div{
     display:flex;
     align-content: center;
@@ -119,6 +119,34 @@ h2{
     gap:16px;
 
 }
+
+
+.one{
+    flex:1 1 auto;
+    min-width: 100px;
+    max-width: 200px;
+    width:100%;
+    min-height : 100px;
+    border : 1px solid blue;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    flex:1 1 auto;
+    display:flex;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-text{
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
 /*Testemonial part (Albeit still undecided)*/
 
 .testemonial-div{
@@ -213,4 +241,16 @@ div.get-quote-container{
 }
 .get-your-quote-text.title{
     font-weight: 700;
+}
+
+
+
+/*logo animation*/
+@keyframes spinning{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
