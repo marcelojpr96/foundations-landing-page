@@ -8,11 +8,11 @@
 </head>
 <body>
     <div class="header">
-        <div class="header-image"> <img class = "logo-img" src="./images/logo.png" class="header-image-file"></div>
+        <div class="header-image"> <img class = "logo-img" src="./images/logo.png" ></div>
         <ul class="header-links">
-            <li><a class="header-links" href="#">link one</a></li>
-            <li><a class="header-links" href="#">link two</a></li>
-            <li><a class="header-links" href="#">link three</a></li>
+            <li><a class="header-links" href="#showcase-div">Criações</a></li>
+            <li><a class="header-links" href="#testemonial-div">Testemunhos</a></li>
+            <li><a class="header-links" href="#get-quote-div">Pedir orçamento </a></li>
         </ul>
     </div>
     <div class="content">
@@ -20,21 +20,21 @@
             <!--This div is for 3 elements-->
             <div class="landing-div-left">
                 <!--Big text-->
-                <h2>Bem vindos à Ori.Gami</h2>
+                <h2 class="landing-div-h2">Bem vindos à Ori.Gami</h2>
                 <!--Introduction-->
-                <p>No link abaixo poderão ver todos os trabalhos já feitos.</p>
+                <p class="landing-div-p">No link abaixo poderão ver todos os nossos trabalhos.<br><br>E quem sabe dar um follow!</p>
                 <!--Button-->
-                <button>Ver trabalhos</button>
+                <button class="btn-trabalhos">Ver trabalhos</button>
                 
             </div>
             <!--This div is for 1 elements the image-->
             <div class="landing-div-right">
-                <div class="one">
-                    img
+                <div class="landing-page-div-right">
+                    <img src="./images/main-logo.png" alt="main logo" class="main-logo-image">
                 </div>
             </div>
         </div>
-        <div class="showcase-div">
+        <div id="showcase-div" class="showcase-div">
             <!-- Top title/text section -->
             <div class="my-work-div">
                 <h2>Alguns trabalhos feitos na Ori.Gami</h2>
@@ -54,18 +54,18 @@
                     <p class="card-text">Estampagens ilustradas</p>
                 </div>
                 <div class="card">
-                    <div class="one img"><img class="showcase-images" src="./images/design-personalizado.jpeg" alt="matching"></div>
-                    <p class="card-text">Desenhos personalizados</p>
+                    <div class="one img"><img class="showcase-images" src="./images/ilustracoes.jpeg" alt="matching"></div>
+                    <p class="card-text">Festas de anos</p>
                 </div>
             </div>
         </div>
-        <div class="testemonial-div">
+        <div id="testemonial-div" class="testemonial-div">
             <div class="testemonial-container">
                 <p class="quote"> Ut accumsan metus vitae augue mattis elementum. Aliquam at lorem congue, porttitor erat hendrerit, pharetra neque. Vivamus ac faucibus massa, a ullamcorper risus. Sed mattis augue id diam fermentum, id elementum quam varius. Phasellus rutrum eros nec dolor gravida molestie. Vivamus non arcu sit amet justo varius facilisis id pulvinar ligula. Etiam ut scelerisque nisl. In libero est, consectetur vel rutrum ac, mattis eu nisl. Aliquam posuere interdum urna, in dictum eros. Aliquam augue nibh, mattis et diam maximus, volutpat semper diam. Nulla et erat odio. Suspendisse potenti. Duis cursus consequat felis dictum dictum. </p>
                 <p class="quote-author">-Lorem, The Ipsum</p>
             </div>
         </div>
-        <div class="get-quote-div">
+        <div id="get-quote-div" class="get-quote-div">
             <div class="get-quote-container">
                 <div class="get-quote-text">
                     <p class="get-your-quote-text title">Get a quote</p>

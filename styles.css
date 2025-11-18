@@ -16,7 +16,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px 16px;
-    background-image: linear-gradient(to bottom,  #21253C, #FF7300);
+    background-color: #FF7300;
     color:#FFFFFF;
 }
 .footer{
@@ -24,10 +24,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color :#F9FAF8;
+    color :#21253c;
     padding: 20px 16px ;
     font-size:16px;
-    background-image: linear-gradient(to top, #21253C , #FF8c69);
+    background-color: #FF8c69;
 }
 .header-links{
     display: flex;
@@ -55,11 +55,24 @@ a.header-links{
     
     
 }
-.header-image-file{
+.logo-img{
 
     animation: 3s linear spinning infinite;
 }
 
+/*div do lado direito*/
+.landing-page-div-right{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+.main-logo-image{
+    max-width: 300px;
+    max-height: 300px;
+    clip-path: circle(34%);
+}
 .content{
     flex:1;
 
@@ -71,32 +84,52 @@ h2{
 }
 .landing-div{
     display: flex;
-    align-content: space-around;
+    align-content: center;
     justify-content: center;
     gap:10px;
     background-image: linear-gradient(to bottom,  #FF7300, #FFFFFF);
-    min-height: 500px;
+    min-height: 600px;
     width: 100%;
     flex-shrink: 1;
     flex-wrap: wrap;
 }
 .landing-div-left{
-    flex:1;
+    flex:2;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start ;
+    align-items:center ;
     min-height : 80%;
-    padding:20px 16px 20px 60px;
-    border:2px solid green;
+    padding:20px 16px 20px 100px;
+    gap:16px;
 }
+.btn-trabalhos{
+    align-self: flex-start;
+    width:200px;
+    height: 40px;
+    background-color: #FFB6C1;
+    border:#FFB6C1;
+    border-radius: 5px;
+    color:#21253C;
+}
+.btn-trabalhos:hover{
+    transform:scale(1.1)
+}
+.btn-trabalhos:active{
+    transform:scale(1)
+}
+.landing-div-h2,.landing-div-p{
+    align-self: flex-start;
+    color:#21253C;
+}
+
+
 .landing-div-right{
     flex:1;
-    padding:20px 16px 20px 16px;
+    padding:20px 100px 20px 16px;
     display: flex;
     align-content: center;
     justify-content: center;
-    border:2px solid green;
 }
 
 
@@ -123,6 +156,12 @@ h2{
     gap:16px;
 
 }
+.one.img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* drop shadow for depth */
+    z-index:10;
+    overflow:visible;
+}
 
 .one{
      flex:1 1 auto;
@@ -143,6 +182,8 @@ h2{
     border : 3px solid #F9D1D9;
     border-radius: 5px;
     flex-wrap: wrap;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
@@ -213,59 +254,51 @@ img.logo-img{
 img.showcase-images{
     width: 100%;
     height:100%;
+    object-fit: cover;
+
 }
 div.get-quote-container{
     flex:1 1 auto;
-    background-color: #3882f6;
-    padding:10px 40px;
+    background-color: #FF8C69;
+    border:#FFB6C1;
+    padding:10px 10px;
     border-radius: 12px;
     max-height:100px;
-    max-width:600px;
+    max-width:800px;
     display: flex;
     flex-direction: row;
     gap:2rem;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-content: space-around;
     flex-wrap: wrap;
-
 }
 
 .btn-get-quote{
     align-self:center;
     justify-self: center;
-    min-width:100px;
+    min-width:200px;
+    min-height:40px;
     padding: auto;
-    background-color: #3882f6;
+    background-color: #FF8C69;
+    border:#FFB6C1;
     border:1px solid white;
-    color:#F9FAF8;
+    color:#21253C;
+}
+.btn-get-quote:hover{
+    transform:scale(1.1)
 }
 .btn-get-quote:active{
-    animation: .2s button-clicked infinite;
+    transform:scale(1)
 }
-@keyframes button-clicked{
-    0%{
 
-    }
-    25%{
-        transform: scale(1.1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    50%{
-        transform: scale(-1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
 
 .get-your-quote-text{
+    align-self: center;
     font-size: 16px;
-    color:#F9FAF8;
+    color :#21253C;
 }
 .get-your-quote-text.message{
-    font-size:10px;
+    font-size:13px;
 }
 .get-your-quote-text.title{
     font-weight: 700;
