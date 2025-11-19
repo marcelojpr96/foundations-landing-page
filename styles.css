@@ -64,7 +64,8 @@ a.header-links{
     animation: 3s linear spinning infinite;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1050px)
+{
     .header {
         flex-direction: column;
         align-items: center;
@@ -93,7 +94,10 @@ a.header-links{
     }
 }
 
-
+a.btn-trabalhos{
+    cursor: pointer;
+    text-decoration: none;
+}
 
 
 
@@ -308,6 +312,7 @@ p.card-text{
 .quote-author{
     align-self: flex-end;
     color:#21253c;
+    font-weight: 700;
 }
 
 
@@ -323,7 +328,6 @@ p.card-text{
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid black;
 
 }
 
@@ -351,7 +355,7 @@ div.get-quote-container{
     margin-bottom:8px;
     border-radius: 12px;
     max-height:150px;
-    max-width:500px;
+    max-width:600px;
     display: flex;
     flex-direction: row;
     gap:2rem;
@@ -393,6 +397,11 @@ div.get-quote-container{
 }
 .get-your-quote-text.title{
     font-weight: 700;
+}
+
+.btn-get-quote>*{
+    text-decoration: none;
+    color:#21253C;
 }
 
 @media (max-width: 600px) {
