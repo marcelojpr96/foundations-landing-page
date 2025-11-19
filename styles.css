@@ -64,6 +64,42 @@ a.header-links{
     animation: 3s linear spinning infinite;
 }
 
+@media (max-width: 650px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+        padding: 10px 2px;
+    }
+    .header-image {
+        padding-left: 0;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    ul.header-links {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+        width: 100%;
+    }
+    a.header-links {
+        font-size: 15px;
+        padding: 2px 0;
+    }
+}
+
+
+
+
+
+
+/*landing div*/
+
 /*div do lado direito*/
 .landing-page-div-right{
     flex: 1;
@@ -90,7 +126,7 @@ h2{
     display: flex;
     align-content: center;
     justify-content: center;
-    gap:10px;
+    gap:10%;
     background-image: linear-gradient(to bottom,  #FF7300, #FFFFFF);
     min-height: 600px;
     width: 100%;
@@ -98,15 +134,22 @@ h2{
     flex-wrap: wrap;
 }
 .landing-div-left{
-    flex:2;
+    flex:2 1 auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
     min-height : 80%;
-    padding:20px 16px 20px 100px;
+    padding:20px 16px 20px 10%;
     gap:16px;
 }
+
+.landing-div-left>*{
+    padding:0px;
+    border:0px;
+    margin :0px;
+}
+
 .btn-trabalhos{
     align-self: flex-start;
     width:200px;
@@ -130,12 +173,38 @@ h2{
 
 .landing-div-right{
     flex:1;
-    padding:20px 100px 20px 16px;
+    padding:20px 100px 20px 0px;
     display: flex;
     align-content: center;
     justify-content: center;
 }
-
+@media (max-width: 600px) {
+    .landing-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    min-height: 8vh;
+  }
+  .landing-div-left, .landing-div-right, .landing-page-div-right {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .landing-div-left > *, .landing-div-right > *, .landing-page-div-right > * {
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main-logo-image {
+    display: block;
+    margin: 24px auto;
+    max-width: 70vw;
+  }
+}
 
 /*show case*/
 .showcase-div{
